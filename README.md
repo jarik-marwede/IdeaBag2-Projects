@@ -12,7 +12,7 @@ The original categories from *Idea Bag 2* are used to organize them.
 
 ## How to use
 If you want to get the programs for playing around with them or editing them just download or clone them from Github.
-All programs need [python 3.8](https://www.python.org/downloads/) or later installed, 
+All programs need [python 3.10](https://www.python.org/downloads/) or later installed, 
 and for some of them external modules are required.
 Go to [Dependencies](#dependencies) to check which modules you need to install and how.
 
@@ -24,7 +24,7 @@ You can watch this video, which explains how to use this repository and how it i
 If you want to contribute in any way please take a look at [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Dependencies
-* [Python 3.8+](https://www.python.org/downloads/)
+* [Python 3.10+](https://www.python.org/downloads/)
 * [Pillow](http://python-pillow.org) (Graphics and Multimedia/Dominant Colors, Threading/Bulk Thumbnail Creator)
 * [Beautifulsoup](https://www.crummy.com/software/BeautifulSoup/) (Web/Page Scraper)
 * [Pygame](https://www.pygame.org/) (Graphics and Multimedia/Mp3 Player)
