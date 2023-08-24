@@ -255,7 +255,7 @@ class MainWindow(tk.Tk):
         self.treeview_frame.grid_rowconfigure(0, weight=1)
         self.volume_frame.grid_rowconfigure(1, weight=1)
 
-    def play_audio(self, file: tuple = None):
+    def play_audio(self, file: tuple | None = None):
         """Play the currently selected file."""
         selection = self.playlist_treeview.selection()
 

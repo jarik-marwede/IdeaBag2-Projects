@@ -19,15 +19,15 @@ class RSSItem:
 
     def __init__(self,
                  title: str,
-                 link: str = None,
-                 description: str = None,
-                 author: str = None,
-                 category: str = None,
-                 comments: str = None,
-                 enclosure: dict = None,
-                 guid: str = None,
-                 pub_date: datetime.datetime = None,
-                 source: str = None):
+                 link: str | None = None,
+                 description: str | None = None,
+                 author: str | None = None,
+                 category: str | None = None,
+                 comments: str | None = None,
+                 enclosure: dict | None = None,
+                 guid: str | None = None,
+                 pub_date: datetime.datetime | None = None,
+                 source: str | None = None):
         self.title = title
         self.link = link
         self.description = description
@@ -48,22 +48,22 @@ class RSSDocument:
                  channel_link: str,
                  channel_description: str,
                  items: List[RSSItem],
-                 language: str = None,
-                 copyright: str = None,
-                 managing_editor: str = None,
-                 web_master: str = None,
-                 pub_date: datetime.datetime = None,
-                 last_build_date: datetime.datetime = None,
-                 category: str = None,
-                 generator: str = None,
-                 docs: str = None,
-                 cloud: dict = None,
-                 ttl: int = None,
-                 image: dict = None,
-                 rating: str = None,
-                 text_input: dict = None,
-                 skip_hours: list = None,
-                 skip_days: list = None):
+                 language: str | None = None,
+                 copyright: str | None = None,
+                 managing_editor: str | None = None,
+                 web_master: str | None = None,
+                 pub_date: datetime.datetime | None = None,
+                 last_build_date: datetime.datetime | None = None,
+                 category: str | None = None,
+                 generator: str | None = None,
+                 docs: str | None = None,
+                 cloud: dict | None = None,
+                 ttl: int | None = None,
+                 image: dict | None = None,
+                 rating: str | None = None,
+                 text_input: dict | None = None,
+                 skip_hours: list | None = None,
+                 skip_days: list | None = None):
         self.channel_title = channel_title
         self.channel_link = channel_link
         self.channel_description = channel_description
@@ -89,7 +89,7 @@ class RSSDocument:
 class RSSFile:
     """An RSS file."""
 
-    def __init__(self, file_name: str, rss_document: RSSDocument = None):
+    def __init__(self, file_name: str, rss_document: RSSDocument | None = None):
         self.file_name = file_name
         self.rss_document = rss_document
 

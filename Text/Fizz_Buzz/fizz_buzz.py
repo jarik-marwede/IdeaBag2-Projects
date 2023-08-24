@@ -13,7 +13,7 @@ For numbers which are multiples of both three and five print "FizzBuzz".
 from typing import Generator
 
 
-def fizzbuzz() -> list:
+def fizzbuzz() -> list[str | int]:
     """Return Fizz Buzz from 1 to 100.
 
     Return a list of numbers from 1 to 100,
@@ -21,7 +21,7 @@ def fizzbuzz() -> list:
     multiples of five with Buzz and
     multiples of both with FizzBuzz.
     """
-    fizzbuzz_list = []
+    fizzbuzz_list: list[str | int] = []
     for num in range(1, 101):
         if num % 3 == 0 and num % 5 == 0:
             fizzbuzz_list.append("FizzBuzz")
