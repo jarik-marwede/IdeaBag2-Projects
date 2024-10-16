@@ -125,7 +125,7 @@ class MainWindow(tk.Tk):
         self.bands.set("".join(image.getbands()))
 
 
-def load_image(image_path: str) -> Image:
+def load_image(image_path: str) -> Image.Image:
     """Return Image object of specified image."""
     image = Image.open(image_path)
     image.load()

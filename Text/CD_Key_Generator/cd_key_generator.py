@@ -21,7 +21,7 @@ import os
 import random
 
 
-def generate_key(characters: tuple, length: int, file_name: str = None) -> str:
+def generate_key(characters: tuple, length: int, file_name: str | None = None) -> str:
     """Return random string containing specified characters."""
     random_result = random.choices(characters, k=length)
     string = ""
